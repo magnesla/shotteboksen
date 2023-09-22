@@ -13,6 +13,8 @@ Simply open the file `index.html` in the project root using your favorite browse
 Set settings by browsing `admin.html`. Further information about settings in
 section below.
 
+One can see if the game work by checking if the game counts down in the console of the browser!
+
 ## Settings
 
 Changable settings include:
