@@ -162,24 +162,25 @@ var Gaem = (function(module) {
         });
     };
 
+    // Commented out since it's not a working feature at det moment. 
 
-    document.querySelector("#file").addEventListener("change", function(){
-        const reader = new FileReader();
+    // document.querySelector("#file").addEventListener("change", function(){
+    //     const reader = new FileReader();
     
-        reader.addEventListener("load", () => {
-            localStorage.setItem("recent-image", reader.result);
-        });
+    //     reader.addEventListener("load", () => {
+    //         localStorage.setItem("recent-image", reader.result);
+    //     });
     
-        reader.readAsDataURL(this.files[0]);
+    //     reader.readAsDataURL(this.files[0]);
     
-        document.addEventListener("DOMContentLoaded", () => {
-            const recentImageDataUrl = localStorage.getItem("recent-image");
+    //     document.addEventListener("DOMContentLoaded", () => {
+    //         const recentImageDataUrl = localStorage.getItem("recent-image");
     
-            if(recentImageDataUrl){
-                document.querySelector("#background-image").setAttribute("src", recentImageDataUrl);
-            }
-        })
-    });
+    //         if(recentImageDataUrl){
+    //             document.querySelector("#background-image").setAttribute("src", recentImageDataUrl);
+    //         }
+    //     })
+    // });
 
     /*
      * Public methods
